@@ -1,15 +1,15 @@
-function prime(n){
-  count=0;
-  for(i=1;i<=n;i++){
-     if(n%i==0){   
-        return true;
+function prime(num){
+  let factors=0;
+  for(i=1;i<=num;i++){
+     if(num%i==0){   
+       return factors++;
       }
         return false;
    }
 }
-  let a=prime(13);
- if(a==2){
-   console.log("prime");
+  let answer=prime(13);
+ if(answer==2){
+   console.log(num,"prime");
    }else{
-   console.log("not");  
+   console.log(num,"not prime");  
 }

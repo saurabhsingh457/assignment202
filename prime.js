@@ -1,15 +1,19 @@
 function prime(num){
   let factors=0;
   for(i=1;i<=num;i++){
-     if(num%i==0){   
-       return factors++;
+     if(num%i==0){  
+        factors++;
       }
-        return false;
-   }
+  }
+    if(factors==2){
+      return true;
+    }
+    return false;
+   
 }
-  let answer=prime(13);
- if(answer==2){
-   console.log(num,"prime");
+  let answer=prime(14);
+ if(answer==true){
+   console.log("prime");
    }else{
-   console.log(num,"not prime");  
+   console.log("not prime");  
 }
